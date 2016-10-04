@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Seguridad Informatica</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link type="text/css" rel="stylesheet" href="css/vendor/materialize.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+    <nav>
+        <div class = "colorF nav-wrapper">
+            <a href="#!" class="center brand-logo">
+      	        Seguridad Informatica
+            </a>
+        </div>
+    </nav>
+	<div class=" container col s12 m12 l12" >
+	    <div class="center ">
+	        <img src="img/ucss.png" class="img_logo responsive-img">
+	        <h4>Algoritmos de Encriptamiento</h4>
+	    </div>
+       <div class="row">
+       <button class="btn waves-effect waves-light" type="button" onclick="irpagina()">Ir a Enigma</button>
+        <div class="input-field col s12">
+            <select onChange="jsFunction()" id="selectOpt">
+              <option value="" disabled selected>Seleccione el Algoritmo</option>
+              <option value="uno">Algoritmo Cesar</option>
+              <option value="dos">Algoritmo Enigma</option>
+            </select>
+        </div>
+        
+        </div>
+		<div class="inicio row" id="algoritmoCesar">
+            <div class="col s6 m6 l6">
+		      <div class="algCesar">
+                  <p>ALGORITMO CESAR</p>
+		           <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s7">
+                          <input id="palabra" type="text" class="validate">
+                          <label for="palabra">Palabra</label>
+                          <button class="btn waves-effect waves-light" type="submit" name="action" id="encCesar">Encriptar
+                            <i class="material-icons right">fast_forward</i>
+                          </button>
+                        </div>
+                        <div class="input-field col s5">
+                            <input id="indice" type="number" class="validate">
+                        <label for="indice">Numero</label>
+                        </div>
+                      </div>
+                    </form>
+                    <div id="respuesta1" class="mensajes col s12">
+                    </div>
+                </div>
+	        </div>
+		  </div>
+		  <div class="col s6 m6 l6">
+		      <div class="algCesar2">
+                  <p>ALGORITMO CESAR MODIFICADO</p>
+		         <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s7">
+                          <input id="palabraM" type="text" class="validate">
+                          <label for="palabraM">Palabra</label>
+                          <button class="btn waves-effect waves-light" type="button" name="action" id="encCesarM">Encriptar
+                            <i class="material-icons right">fast_forward</i>
+                          </button>
+                        </div>
+                        <div class="input-field col s5">
+                            <input id="indiceM" type="number" class="validate">
+                        <label for="indiceM">Numero</label>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div id="newResultadoM" class="mensajes col s12">
+                    </div>
+                </div>
+            </div>
+		  </div>
+		</div>
+		<div id="algoritmoEnigma" class="inicio">
+		    HOla
+		</div>
+	</div>
+	<script type="text/javascript" src="js/vendor/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
+
+
+
+
+
